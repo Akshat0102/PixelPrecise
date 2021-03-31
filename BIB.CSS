@@ -1,0 +1,257 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: black;
+    background-image: url(1268183.jpg);
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+.main{
+    padding: 25px 20px;
+}
+
+.copy-container h1{
+    font-size: 70px;
+    color: goldenrod;
+    border-radius: 7px;
+    text-align: center;
+    border-style: ridge;
+}
+
+.copy-container span{
+    font-style: italic;
+    font-weight: bold;
+    color: brown;
+    float: right;
+        
+}
+
+.secmain{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 10px;
+}
+
+.copy-container p{
+  font-size: 30px;
+  color: antiquewhite;   
+}
+
+.contents{
+    
+    height: 2100px;
+    margin-top: 50px;
+    border: teal 6px solid ;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    
+}
+
+.content-logo{
+    font-size: 45px;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    color: white;
+}
+
+.content-logo span{
+    padding: 8px 2px;
+    border-radius: 7px;
+}
+
+.content-items1{
+    margin-right: 10px;
+    margin-left: 35px;
+    margin-top: 25px;
+    float: left;
+}
+
+.content-items2{
+    margin-right: 10px;
+    margin-left: 35px;
+    margin-top: 25px;
+    float: left;
+    
+}
+
+.content-items3{
+    margin-right: 10px;
+    margin-left: 35px;
+    margin-top: 25px;
+    float: left;
+    
+}
+
+.content-items4{
+    margin-right: 10px;
+    margin-left: 35px;
+    margin-top: 25px;
+    float: left;
+    
+}
+
+.content-items5{
+    margin-right: 10px;
+    margin-left: 35px;
+    margin-top: 25px;
+    float: left;
+    
+}
+
+.contents img{
+    height: 350px;
+    width: 350px;
+    border-radius: 25px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 2px;
+    
+}
+
+.footer {
+    width: 1250px;
+    height: 350px;
+    position: relative;
+    background-image: url(dotted.jpg);
+    border-radius: 20px;
+    
+  }
+  .footer-content {
+    height: 300px;
+    display: flex;
+    padding: 40px;
+    width: 100%;
+    border-bottom: 1px solid #84849d;
+  }
+  .footer-section {
+    width: 30%;
+  }
+
+  .footer-content .form {
+    width: 33%;
+  }
+  .footer-content .form p {
+    font-size: 20px;
+  }
+  .footer-section input {
+    border: 1px solid #84849d;
+    padding: 10px 25px;
+    padding-left: 120px;
+    padding-right: 100px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  .footer-section button {
+    padding: 12px 73px;
+    color: white;
+    font-size: 15px;
+    background-color: #5d7cc5;
+    border: none;
+    border-radius: 5px;
+    margin-left: 80px;
+  }
+  .footer-section li {
+    list-style: none;
+    padding-bottom: 20px;
+    font-size: 20px;
+  }
+  .footer-section li a {
+    text-decoration: none;
+    color: #000948;
+  }
+  .footer-section h3 {
+    color: #010837;
+    font-size: 30px;
+  }
+
+  .footer-section img{
+       height : 20px;
+       width : 20px;
+       padding-right: 5px;
+       
+  }
+
+ #comma{
+      height: 10px;
+      width: 10px;
+      padding-bottom: 15px ;
+  }
+
+  .footer-bottom{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    color: darkslateblue;
+  }
+
+  /* The Modal (background) */
+.bib-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .bib-modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: bib-zoom;
+    animation-duration: 0.6s;
+  }
+    
+  @-webkit-keyframes bib-zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes bib-zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .bib-close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .bib-close:hover,
+  .bib-close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .bib-modal-content {
+      width: 100%;
+    }
+  }
+
+  

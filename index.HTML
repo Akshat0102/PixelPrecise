@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="BIB.CSS">
+        <title>Pixel Precise</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    </head>
+<body>
+
+    <div class="main">
+        <div class="copy-container">
+            <h1><marquee scrollamount = "20" behavior = "alternate"> ---- Pixel Precise ----</marquee></h1>
+        </div>
+    </div>
+
+    <div class="secmain">
+        <div class="copy-container">
+            <p> If you are in love with wildlife and nature then you are at perfect place to see what you love.
+                We at Pixel Precise are a group of photographers from all over the world who capture most stunning moments of wildlife
+            and nature.We have special links for wallpapers and aedthetic backgrounds. You can also subscribe to our page to get
+            montly collection of wildlife images from around the world!!! </p>
+        </div>
+    </div>
+
+    <div class="contents">
+        <div class="content-logo">
+            <img src="star.png" style="height: 46px; width: 46px; padding-right: 10px; padding-top: 10px;">
+            <span>Dive Into Our Wildlife Gallery</span>
+            <img src="star.png" style="height: 46px; width: 46px; padding-left: 10px; padding-top: 12px;">
+        </div>
+        <div class ="content-items1">
+            <img src="1.jpg" onclick='bigImgView(this.src)'>
+        </div>
+        <div class ="content-items1">
+            <img src="2.jpg" onclick='bigImgView(this.src)'>
+        </div>
+        <div class ="content-items1">
+            <img src="3.jpg" onclick='bigImgView(this.src)'>
+        </div>
+        
+        <div class ="content-items2">
+            <img src="4.jpg" onclick='bigImgView(this.src)'>
+        </div>
+        <div class ="content-items2">
+            <img src="5.jpg" onclick='bigImgView(this.src)'>
+        </div>
+        <div class ="content-items2">
+            <img src="6.jpg" onclick='bigImgView(this.src)'>
+        </div>
+
+        <div class ="content-items3">
+            <img src="7.jpg" onclick='bigImgView(this.src)'>
+        </div>
+        <div class ="content-items3">
+            <img src="8.jpg" onclick='bigImgView(this.src)'>
+        </div>
+        <div class ="content-items3">
+            <img src="9.jpg" onclick='bigImgView(this.src)'>
+        </div>
+
+        <div class ="content-items4">
+            <img src="10.jpg" onclick='bigImgView(this.src)'>
+        </div>
+        <div class ="content-items4">
+            <img src="11.jpg" onclick='bigImgView(this.src)'>
+        </div>
+        <div class ="content-items4">
+            <img src="12.jpg" onclick='bigImgView(this.src)'>
+        </div>
+
+        <div class ="content-items5">
+            <img src="13.jpg" onclick='bigImgView(this.src)'>
+        </div>
+        <div class ="content-items5">
+            <img src="14.jpg" onclick='bigImgView(this.src)'>
+        </div>
+        <div class ="content-items5">
+            <img src="15.jpg" onclick='bigImgView(this.src)'>
+        </div>
+    </div>
+
+    <script>
+
+        // Preview function which takes a image url ( IMG tag's src sttribute ) as parameter.
+        let bigImgView = (imgSrc) => {
+        
+            // Making elements
+            let divP = document.createElement('DIV');
+            let spanC = document.createElement('SPAN');
+            let imgC = document.createElement("IMG");
+        
+            // Setting attributes
+            divP.setAttribute('class', 'bib-modal');
+            spanC.setAttribute('class', 'bib-close');
+            imgC.setAttribute('class', 'bib-modal-content');
+            imgC.setAttribute('src', imgSrc);
+        
+            // Adding texts
+            spanC.innerHTML = '&times;';
+        
+            // Handling events
+            spanC.onclick = function(){
+                this.parentElement.remove();
+            }
+        
+            // Appending childs
+            divP.appendChild(spanC);
+            divP.appendChild(imgC);
+        
+            // Appending to body
+            document.body.appendChild(divP);
+            divP.style.display = 'block';
+            console.log("Big image");
+        
+        }
+        
+        
+        </script>
+
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3><img src="doubleInvertedComma1.png" id="comma">Gallery<img src="doubleInvertedComma.png" id="comma"></h3>
+            <ul>
+              <li><a href="#">Our Favourites</a></li>
+              <li><a href="#">Wallpapers</a></li>
+              <li><a href="#">Aesthetic</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3><img src="doubleInvertedComma1.png" id="comma"> Media<img src="doubleInvertedComma.png" id="comma"></h3>
+            <ul>
+              <li><a href="#"><img src="2.png">PixelPrecise</a></li>
+              <li><a href="#"><img src="1.png">Pixel_Precise</a></li>
+              <li><a href="#"><img src="3.png">Pixel_Precise</a></li>
+            </ul>
+        </div>
+
+          <div class="footer-section form">
+            <h3><img src="doubleInvertedComma1.png" id="comma">Wildlife Subscription<img src="doubleInvertedComma.png" id="comma"></h3>
+            <p>Subscribe to our website to get your monthly dose of widlife photos, wallpapers and other aesthetic images.</p>
+         <input type="email" placeholder="Enter your Email Address" required>
+         <button>Subscribe</button>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; Akshat Khandelwal, Pixel Precise, Head Photographer
+        </div>
+      </footer>
+
+
+
+
+
+
+
+
+</body>    
+</html>
